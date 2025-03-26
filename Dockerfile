@@ -12,7 +12,6 @@ RUN npm ci --only=production
 
 # Copy source code and env file
 COPY index.js .
-COPY .env .
 
 # Expose the WebSocket port (matches your code's PORT || 8080)
 EXPOSE 8080
